@@ -56,8 +56,8 @@
 			return false;
 		}
 		
-/* 		header('Content-Type: application/json');
-		echo json_encode($sth); */
+/* 		header('Content-Type: application/json'); */
+		echo json_encode($sth);
 	}
 
 	function deleteBeer($id)
