@@ -47,16 +47,17 @@
 			$sth->bindParam(':fil', $_POST["filepath"], PDO::PARAM_STR);
 			$sth->bindParam(':des', $_POST["descript"], PDO::PARAM_STR);
 			$sth->bindParam(':add', $_POST["add_user"], PDO::PARAM_INT);
-			$sth->bindParam(':las', date("Y-m-d"));
+			$sth->bindParam(':las', date("Y-m-d H:i:s"));
 			$sth->execute();
+
 		} catch (PDOException $e) {
 			echo 'Problème de lecture de la base de données: ' . $e->getMessage();
 			EDatabase::rollBack();
 			return false;
 		}
 		
-		header('Content-Type: application/json');
-		echo json_encode($sth);
+/* 		header('Content-Type: application/json');
+		echo json_encode($sth); */
 	}
 
 	function deleteBeer($id)
