@@ -81,3 +81,9 @@ Pour aller plus loin
 
 ## Contributeurs (langages par ordre alphabétique)
 
+[Laravel](https://github.com/SaphireVert/Kata-API/tree/saphirevert/laravel) → [![saphirevert-repos][saphirevert-shield]][saphirevert-url]
+
+
+[saphirevert-shield]: https://badgen.net/badge/Github/SaphireVert/green?icon=https://svgshare.com/i/Srf.svg
+[saphirevert-url]: https://github.com/saphirevert/
+
